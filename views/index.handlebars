@@ -1,14 +1,31 @@
 <section class="py-2">
-  <div class="row">
+  <div class="row mt-5">
     <div class="col-md-6 text-center">
       <h1 class="display-3 mt-3 pt-5">
-        Web Development Ebook
+        Mail In U
       </h1>
-      <p class="lead">learn web development front to back</p>
-      
+      <p class="lead">Reach out to your audience</p>
+      <form action="/your-server-side-code" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="pk_test_oA6VTMZ3DRbcgi8O4vFb4xjl00FAtZ8oVf"
+          data-amount="100"
+          data-name="MailInU"
+          data-description="Mail Service To Grow Your Audience"
+          data-image="/img/marketplace.png"
+          data-locale="auto">
+        </script>
+        <script>
+          // Hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+        <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase For $10</button>
+      </form>
     </div>
     <div class="col-md-6">
       <img src="/img/book.png" alt="book cover" class="img-fluid">
     </div>
   </div>
 </section>
+// RES: 
+Cannot POST /your-server-side-code
